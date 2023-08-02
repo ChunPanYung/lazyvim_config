@@ -12,4 +12,33 @@ return {
       },
     },
   },
+  { -- Git Conflict Tool
+    "akinsho/git-conflict.nvim",
+    version = "*",
+    config = true,
+  },
+  -- add any tools you want to have installed below
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        -- Shell Script
+        "shellcheck",
+        "shfmt",
+        "bash-language-server",
+        -- ansible
+        "ansible-language-server",
+        "ansible-lint",
+        -- python
+        "black",
+        "ruff",
+        "ruff-lsp",
+        -- lua
+        "lua-language-server",
+        "stylua",
+        -- JSON
+        "json-lsp",
+      },
+    },
+  },
 }
