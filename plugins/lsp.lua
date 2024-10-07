@@ -1,25 +1,13 @@
 return {
-  -- {
-  --   "williamboman/mason.nvim",
-  --   opts = {
-  --     ensure_installed = {
-  --       -- Shell Script
-  --       "shellcheck",
-  --       "shfmt",
-  --       "bash-language-server",
-  --       -- ansible
-  --       "ansible-language-server",
-  --       "ansible-lint",
-  --       -- python
-  --       "black",
-  --       "ruff",
-  --       "ruff-lsp",
-  --       -- lua
-  --       "lua-language-server",
-  --       "stylua",
-  --       -- JSON
-  --       "json-lsp",
-  --     },
-  --   },
-  -- },
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        -- Shell Script
+        "shellcheck",
+        "shfmt",
+        "bash-language-server",
+      },
+    },
+  },
 }
