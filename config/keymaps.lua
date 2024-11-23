@@ -9,3 +9,4 @@ nnoremap ,a :exec "normal a".nr2char(getchar())."\e"<CR>
 
 -- map <C-H> and <C-BS> to delete word
 vim.keymap.set("i", "<C-H>", "<C-W>", { desc = "Delete Word." })
+vim.keymap.set("i", "<M-BS>", "<C-W>", { desc = "Delete Word." })
