@@ -4,3 +4,11 @@
 vim.opt.number = true
 vim.opt.relativenumber = false
 vim.opt.colorcolumn = "80"
+
+vim.filetype.add({
+  extension = {
+    gvy = "groovy",
+    gy = "groovy",
+    gsh = "groovy",
+  },
+})
