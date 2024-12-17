@@ -9,3 +9,8 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.expandtab = true
   end,
 })
+
+-- Remove trailing whitespace
+vim.api.nvim_create_user_command("Trimspace", function()
+  vim.cmd([[%s/\s\+$//e]])
+end, {})
