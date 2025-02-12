@@ -4,7 +4,9 @@ return {
     opts = {
       ensure_installed = {
         -- Shell Script
-        "bash-language-server",
+        "bashls",
+        -- nix language server
+        "nil_ls"
       },
     },
   },
