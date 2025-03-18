@@ -14,3 +14,13 @@ vim.api.nvim_create_autocmd("FileType", {
 vim.api.nvim_create_user_command("Trimspace", function()
   vim.cmd([[%s/\s\+$//e]])
 end, {})
+
+-- Disable shellcheck on .env file
+local lsp_hacks = vim.api.nvim_create_augroup("LspHacks", { clear = true })
+vim.api.nvim_create_autocmd({ "BufNewFile", "BufReadPost" }, {
+  group = lsp_hacks,
+  pattern = ".env*",
+  callback = function(e)
+    vim.diagnostic.enable(false, { bufnr = e.buf })
+  end,
+})
