@@ -4,6 +4,7 @@
 vim.opt.number = true
 vim.opt.relativenumber = false
 vim.opt.colorcolumn = "80"
+vim.opt.wrap = true
 vim.opt.shell = "fish"
 
 vim.filetype.add({
