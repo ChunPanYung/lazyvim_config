@@ -6,6 +6,7 @@ vim.opt.relativenumber = false
 vim.opt.colorcolumn = "80"
 vim.opt.wrap = true
 vim.opt.shell = "fish"
+vim.opt.list = true
 
 vim.filetype.add({
   extension = {
