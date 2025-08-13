@@ -32,3 +32,9 @@ vim.api.nvim_create_autocmd({ "BufNewFile", "BufReadPost" }, {
     vim.diagnostic.enable(false, { bufnr = e.buf })
   end,
 })
+
+vim.cmd([[
+command DiffOrig vert new | set buftype=nofile | read ++edit # | 0d_
+       \ | diffthis | wincmd p | diffthis
+
+]])
