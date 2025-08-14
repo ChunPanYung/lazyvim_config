@@ -2,19 +2,19 @@
 -- Default autocmds that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/autocmds.lua
 -- Add any additional autocmds here
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "cs", "groovy", "json" },
+  pattern = { "cs", "groovy", "json", "java" },
   callback = function()
-    vim.opt_local.shiftwidth = 4
-    vim.opt_local.tabstop = 4
-    vim.opt_local.expandtab = true
+    vim.bo.shiftwidth = 4
+    vim.bo.tabstop = 4
+    vim.bo.expandtab = true
   end,
 })
 vim.api.nvim_create_autocmd("FileType", {
   pattern = { "go", "bash", "fish", "sh" },
   callback = function()
-    vim.opt_local.shiftwidth = 4
-    vim.opt_local.tabstop = 4
-    vim.opt_local.expandtab = false
+    vim.bo.shiftwidth = 4
+    vim.bo.tabstop = 4
+    vim.bo.expandtab = false
   end,
 })
 
