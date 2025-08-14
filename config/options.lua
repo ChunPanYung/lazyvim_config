@@ -5,8 +5,12 @@ vim.opt.number = true
 vim.opt.relativenumber = false
 vim.opt.colorcolumn = "80"
 vim.opt.wrap = true
-vim.opt.list = true
 vim.opt.shell = (vim.fn.executable("fish") == 1) and "fish" or "bash"
+
+vim.opt.list = true
+vim.opt.listchars:append({
+  tab = "│─",
+})
 
 vim.filetype.add({
   extension = {
