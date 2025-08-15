@@ -30,4 +30,12 @@ return {
       { "<leader>h", ":HurlRunner<CR>", desc = "Hurl Runner", mode = "v" },
     },
   },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        "hurl",
+      },
+    },
+  },
 }

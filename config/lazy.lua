@@ -28,7 +28,6 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.json" },
     { import = "lazyvim.plugins.extras.lang.rust" },
 
-    { import = "lazyvim.plugins.extras.util.rest" },
     { import = "lazyvim.plugins.extras.util.dot" },
 
     { import = "plugins" },
