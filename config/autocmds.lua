@@ -23,6 +23,11 @@ vim.api.nvim_create_user_command("Trimspace", function()
   vim.cmd([[%s/\s\+$//e]])
 end, {})
 
+-- Replace '\n' with actual newline
+vim.api.nvim_create_user_command("Replacenewline", function()
+  vim.cmd([[%s/\\n/\r/g]])
+end, {})
+
 -- Disable shellcheck on .env file
 local lsp_hacks = vim.api.nvim_create_augroup("LspHacks", { clear = true })
 vim.api.nvim_create_autocmd({ "BufNewFile", "BufReadPost" }, {
