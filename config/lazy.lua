@@ -28,9 +28,14 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.yaml" },
     { import = "lazyvim.plugins.extras.lang.rust" },
 
+    -- DevOps
     { import = "lazyvim.plugins.extras.lang.ansible" },
     { import = "lazyvim.plugins.extras.lang.docker" },
     { import = "lazyvim.plugins.extras.lang.helm" },
+
+    -- AI
+    { import = "lazyvim.plugins.extras.ai.copilot" },
+    { import = "lazyvim.plugins.extras.ai.copilot-chat" },
 
     { import = "plugins" },
   },
