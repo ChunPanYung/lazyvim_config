@@ -19,3 +19,6 @@ vim.filetype.add({
     gsh = "groovy",
   },
 })
+
+-- Enable Copilot LSP
+vim.lsp.enable("copilot")
